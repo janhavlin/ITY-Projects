@@ -20,25 +20,27 @@
 \begin{titlepage}
 \begin{center}
 	\Huge
-	\textsc{Fakulta informačních technologií} \\
 	\textsc{Vysoké učení technické v~Brně}\\
+	\huge
+	\textsc{Fakulta informačních technologií} \\
 	\vspace{\stretch{0.382}}
 	\LARGE
-	Typografie a publikování\,--\,3. projekt \\
-	Tabulky a obrázky
+	Typografie a~publikování\,--\,3. projekt \\
+	\Huge
+	Tabulky a~obrázky
 	\vspace{\stretch{0.618}}
 \end{center}
 {\Large \today \hfill Jan Havlín (xhavli47)}
 \end{titlepage}
 
 \section{Úvodní strana}
-Název práce umístěte do zlatého řezu a nezapomeňte uvést dnešní datum a vaše jméno a příjmení.
+Název práce umístěte do zlatého řezu a~nezapomeňte uvést dnešní datum a~vaše jméno a~příjmení.
 
 \section{Tabulky}
-Pro sázení tabulek můžeme použít buď prostředí \texttt{ tabbing } nebo prostředí \texttt{ tabular }.
+Pro sázení tabulek můžeme použít buď prostředí \texttt{tabbing} nebo prostředí \texttt{tabular}.
 
-\subsection{Prostředí \texttt{ tabbing }}
-Při použití \texttt{ tabbing } vypadá tabulka následovně:
+\subsection{Prostředí \texttt{tabbing}}
+Při použití \texttt{tabbing} vypadá tabulka následovně:
 \begin{tabbing}
 Vodní melouny~~~~ \= Cena~~~~~~ \= Množství \kill
 \textbf{Ovoce} \> \textbf{Cena} \> \textbf{Množství} \\
@@ -47,10 +49,10 @@ Hrušky \> 27,40 \> 2,5\,kg \\
 Vodní melouny \> 35,-- \> 1\,kus \\
 \end{tabbing}
 
-\noindent Toto prostředí se dá také použít pro sázení algoritmů, ovšem vhodnější je použít prostředí \texttt{ algorithm } nebo \texttt{ algorithm2e } (viz sekce \ref{sec:algoritmy}).
+\noindent Toto prostředí se dá také použít pro sázení algoritmů, ovšem vhodnější je použít prostředí \texttt{algorithm} nebo \texttt{algorithm2e} (viz sekce \ref{sec:algoritmy}).
 
-\subsection{Prostředí \texttt{ tabular }}
-Další možností, jak vytvořit tabulku, je použít prostředí \texttt{ tabular }. Tabulky pak budou vypadat takto\footnote{Kdyby byl problém s \texttt{ cline }, zkuste se podívat třeba sem: http://www.abclinuxu.cz/tex/poradna/show/325037.}:
+\subsection{Prostředí \texttt{tabular}}
+Další možností, jak vytvořit tabulku, je použít prostředí \texttt{tabular}. Tabulky pak budou vypadat takto\footnote{Kdyby byl problém s~\texttt{cline,} zkuste se podívat třeba sem: http://www.abclinuxu.cz/tex/poradna/show/325037.}:
 
 \bigskip
 
@@ -64,7 +66,7 @@ EUR & 27,02 & 27,20 \\
 GBP & 31,08 & 31,80 \\
 USD & 25,15 & 25,51 \\ \hline
 \end{tabular}
-\caption{Tabulka kurzů k dnešnímu dni}
+\caption{Tabulka kurzů k~dnešnímu dni}
 \label{tab:kurzy}
 \end{center}
 \end{table}
@@ -75,15 +77,15 @@ USD & 25,15 & 25,51 \\ \hline
 	\begin{tabular}{|c|c|} \hline
 		$A$ & $\neg A$ \\ \hline
 		\textbf{P} & N \\ \hline
-		\textbf{O} & O \\ \hline
+		\textbf{O} & O~\\ \hline
 		\textbf{X} & X \\ \hline
 		\textbf{N} & P \\ \hline
 	\end{tabular}
 	\begin{tabular}{|c|c|c|c|c|c|} \hline
 		\multicolumn{2}{|c|}{\multirow{2}{*}{$A \wedge B$}} & \multicolumn{4}{|c|}{$B$} \\ \cline{3-6}
 		\multicolumn{2}{|c|}{} & \textbf{P} & \textbf{O} & \textbf{X} & \textbf{N} \\ \hline
-		\multirow{4}{*}{$A$} & \textbf{P} & P & O & X & N \\ \cline{2-6}
-		& \textbf{O} & O & O & N & N \\ \cline{2-6}
+		\multirow{4}{*}{$A$} & \textbf{P} & P & O~& X & N \\ \cline{2-6}
+		& \textbf{O} & O~& O~& N & N \\ \cline{2-6}
 		& \textbf{X} & X & N & X & N \\ \cline{2-6}
 		& \textbf{N} & N & N & N & N \\ \hline
 	\end{tabular}
@@ -91,15 +93,15 @@ USD & 25,15 & 25,51 \\ \hline
 		\multicolumn{2}{|c|}{\multirow{2}{*}{$A \vee B$}} & \multicolumn{4}{|c|}{$B$} \\ \cline{3-6}
 		\multicolumn{2}{|c|}{} & \textbf{P} & \textbf{O} & \textbf{X} & \textbf{N} \\ \hline
 		\multirow{4}{*}{$A$} & \textbf{P} & P & P & P & P \\ \cline{2-6}
-		& \textbf{O} & P & O & P & O \\ \cline{2-6}
+		& \textbf{O} & P & O~& P & O~\\ \cline{2-6}
 		& \textbf{X} & P & P & X & X \\ \cline{2-6}
-		& \textbf{N} & P & O & X & N \\ \hline
+		& \textbf{N} & P & O~& X & N \\ \hline
 	\end{tabular}
 	\begin{tabular}{|c|c|c|c|c|c|} \hline
 		\multicolumn{2}{|c|}{\multirow{2}{*}{$A \rightarrow B$}} & \multicolumn{4}{|c|}{$B$} \\ \cline{3-6}
 		\multicolumn{2}{|c|}{} & \textbf{P} & \textbf{O} & \textbf{X} & \textbf{N} \\ \hline
-		\multirow{4}{*}{$A$} & \textbf{P} & P & O & X & N \\ \cline{2-6}
-		& \textbf{O} & P & O & P & O \\ \cline{2-6}
+		\multirow{4}{*}{$A$} & \textbf{P} & P & O~& X & N \\ \cline{2-6}
+		& \textbf{O} & P & O~& P & O~\\ \cline{2-6}
 		& \textbf{X} & P & P & X & X \\ \cline{2-6}
 		& \textbf{N} & P & P & P & P \\ \hline
 	\end{tabular}	
@@ -109,14 +111,14 @@ USD & 25,15 & 25,51 \\ \hline
 \end{table}
 
 \section{Algoritmy} \label{sec:algoritmy}
-Pokud budeme chtít vysázet algoritmus, můžeme použít prostředí \texttt{ algorithm }\footnote{Pro nápovědu, jak zacházet s prostředím \texttt{ algorithm }, můžeme zkusit tuhle stránku: http://ftp.cstug.cz/pub/tex/CTAN/macros/latex/contrib/algorithms/algorithms.pdf.} nebo \texttt{ algorithm2e }\footnote{Pro \texttt{ algorithm2e } zase tuhle: http://ftp.cstug.cz/pub/tex/CTAN/macros/latex/contrib/algorithm2e/doc/algorithm2e.pdf.} Příklad použití prostředí \texttt{ algorithm2e } viz Algoritmus \ref{alg:fastslam}.
+Pokud budeme chtít vysázet algoritmus, můžeme použít prostředí \texttt{algorithm}\footnote{Pro nápovědu, jak zacházet s~prostředím \texttt{algorithm,} můžeme zkusit tuhle stránku:\newline http://ftp.cstug.cz/pub/tex/CTAN/macros/latex/contrib/algorithms/algorithms.pdf.} nebo \texttt{algorithm2e}\footnote{Pro \texttt{algorithm2e} zase tuhle: http://ftp.cstug.cz/pub/tex/CTAN/macros/latex/contrib/algorithm2e/doc/algorithm2e.pdf.} Příklad použití prostředí \texttt{algorithm2e} viz Algoritmus \ref{alg:fastslam}.
 
 \bigskip
 \algsetup{indent=2em}
 \begin{algorithm}[H]
 \caption{\textsc{Fast}SLAM}
 \label{alg:fastslam}
-\KwIn{$X_{t-1}, u_t, z_t$}
+\KwIn{$(X_{t-1}, u_t, z_t)$}
 \KwOut{$X_t$}
 \SetNlSty{}{}{:  }
 \SetInd{1em}{1em}
@@ -147,7 +149,7 @@ Do našich článků můžeme samozřejmě vkládat obrázky. Pokud je obrázkem
 \begin{figure}[h]
 \begin{center}
 \scalebox{0.4}{\includegraphics{etiopan.eps}\reflectbox{\includegraphics{etiopan.eps}}}
-\caption{Malý Etiopánek a jeho bratříček}
+\caption{Malý Etiopánek a~jeho bratříček}
 \label{img:etiopanek}
 \end{center}
 \end{figure}
@@ -175,8 +177,8 @@ Rozdíl mezi vektorovým\,\dots
 \end{figure}
 
 \noindent se projeví například při zvětšení.\par
-Odkazy (nejen ty) na obrázky \ref{img:etiopanek}, \ref{img:oniivector} a \ref{img:oniibitmap}, na tabulky \ref{tab:kurzy} a \ref{tab:logika} a také na algoritmus \ref{alg:fastslam} jsou udělány pomocí křížových odkazů. Pak je ovšem potřeba zdrojový soubor přeložit dvakrát.\par
-Vektorové obrázky lze vytvořit i přímo v \LaTeX u, například pomocí prostředí \texttt{ picture }.
+Odkazy (nejen ty) na obrázky \ref{img:etiopanek}, \ref{img:oniivector} a~\ref{img:oniibitmap}, na tabulky \ref{tab:kurzy} a~\ref{tab:logika} a~také na algoritmus \ref{alg:fastslam} jsou udělány pomocí křížových odkazů. Pak je ovšem potřeba zdrojový soubor přeložit dvakrát.\par
+Vektorové obrázky lze vytvořit i~přímo v~\LaTeX u, například pomocí prostředí \texttt{picture}.
 
 \begin{landscape}
 \begin{figure}[h]
