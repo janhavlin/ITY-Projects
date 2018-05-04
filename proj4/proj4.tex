@@ -1,0 +1,52 @@
+% 4. projekt do předmětu ITY
+% Autor: Jan Havlín, 1BIT, xhavli47@stud.fit.vutbr.cz
+% Datum: 16. 4. 2018
+% Popis: Bibliografické citace
+
+\documentclass[11pt,a4paper]{article}
+\usepackage{times}
+\usepackage[left=2cm,text={17cm,24cm},top=3cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[czech]{babel}
+\usepackage[T1]{fontenc}
+
+\bibliographystyle{czplain}
+
+\begin{document}
+\begin{titlepage}
+\begin{center}
+	\Huge
+	\textsc{Vysoké učení technické v~Brně}\\
+	\huge
+	\textsc{Fakulta informačních technologií} \\
+	\vspace{\stretch{0.382}}
+	\LARGE
+	Typografie a~publikování\,--\,3. projekt \\
+	\Huge
+	Bibliografické citace
+	\vspace{\stretch{0.618}}
+\end{center}
+{\Large \today \hfill Jan Havlín}
+\end{titlepage}
+\section{Úvod}
+Typografie se zabývá vzhledem tiskového písma. V~dnešní době se s~touto formou vyjadřování setkáváme velmi často, proto si typografie zaslouží nějakou pozornost \cite{leaning:begin}. Dobrá typografie vzniká věnováním pozornosti detailům. Typografické aspekty písma ovlivňují čtenářovu schopnost efektivního čtení obsahu. Jeden z~nejdůležitějších aspektů je výběr fontu \cite{journal:graphic}. Čitelnost potisků produktech má významný vliv na jejich prodej, lidé si méně pravděpodobněji koupí produkt, na kterém je nečitelný font \cite{journal:advertising}.
+
+\section{Historie typografie}
+Písmo a~typografie se vyvinulo z~piktogramů -- zjednodušené kresby, jež reprezentovaly konkrétní myšlenky. Inkové a~Egypťané používali systém nazývaný hieroglyfy \cite{master:historie}. Moderní období typografie vzniká s~vynalezením knihtisku. Hlavní vývoj technik tisku a~písem ovšem proběhl v~19. a~20. století \cite{bachelor:historie}.
+
+\section{Pravidla typografie}
+Několik typografických pravidel:
+\begin{itemize}
+\item{Pro sazbu spojovníku se používá znak \uv{\texttt{-}}. Pokud se spojovník nachází na konci řádku, musíme ho zopakovat na začátku dalšího řádku \cite{cstug:spojovnik}.}
+
+\item{Nezlomitelná mezera zabraňuje zalomení řádku. Používáme ji v~zápisu mezi číslem a~jednotkou (např. 10\,kg), v~psaní data (např. 15.\,4.\,2018) nebo při oddělování tisíců (např. 1\,000\,000) \cite{kerslager:pravidla}.}
+
+\item{Symboly jako čárka, tečka, vykřičník, otazník, středník, dvojtečka se píší těsně za konec slova. Za nimi následuje mezera \cite{wiki:pravidla}.}
+\end{itemize}
+
+\section{Systém \LaTeX}
+\LaTeX je nástroj pro přípravu textů hojně využívaný vědci a~akademiky. Je užitečný zejména pro sázení technických materiálů \cite{helmut:guidetolatex}. Naučit se pracovat s~\LaTeX em není tak snadné. Pro začátečníky i~pokročilé ovšem existuje řada knih, které se zabývají nejrůznějšími problémy tohoto sázecího prostředí \cite{gratzer:practical}.
+
+\newpage
+\bibliography{citace}
+\end{document}
